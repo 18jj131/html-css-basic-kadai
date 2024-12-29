@@ -1,0 +1,110 @@
+/* div要素（id名「top」）に対する装飾 */
+#top {
+  /* 横幅を800pxにします。 */
+  width: 800px; 
+  /* 背景色を「 #dcc9f4」にします。 */
+  background-color: #dcc9f4;
+  /* 上下に20pxの余白を入れて、画面の中央に配置します。 */
+  margin: 20px auto;
+  /* 中にあるp要素が中央揃えになるようにします。 */
+  text-align: center;
+}
+
+/* p要素（class名「top-child」）に対する装飾 */
+.top-child {
+  /* 3つのp要素が横並びになるようにします。 */
+  display: inline-block;
+  /* 横幅を親要素の20%になるようにします。 */
+  width: 20%;
+  /* 背景色を「#ffd9df」にします。 */
+  background-color: #ffd9df;
+}
+
+/* div要素（id名「middle」）に対する装飾 */
+#middle {
+  /* 横幅を800pxにします。 */
+  width: 800px;
+  /* 高さを800pxにします。 */
+  height: 800px;
+  /* 上下に20pxの余白を入れて、画面の中央に配置します */
+  margin: 20px auto;
+  /* 背景色を「#ffd9df 」にします。 */
+  background-color: #ffd9df;
+  /* 親要素のdiv要素（id名「middle」)の相対位置を設定します */
+  position: relative;
+}
+
+/* div要素（id名「middle-child01」「middle-child02」「middle-child03」）に対する共通の装飾 */
+#middle div {
+  /* 横幅を200pxにします。 */
+  width: 200px;
+  /* 高さを200pxにします。 */
+  height: 200px;
+  /* 背景色を「#87ceeb」にします。 */
+  background-color: #87ceeb;
+}
+
+/* 真ん中の図形の位置を指定（id名「middle-child01」） */
+#middle-child01 {
+  /* 親要素のdiv要素（id名「middle」)を基準にした絶対位置に配置 */
+  position: absolute;
+  /* 上から100px、左から100px距離を取った場所に配置 */
+  top: 100px;
+  left: 100px;
+}
+
+/* 真ん中の図形の位置を指定（id名「middle-child02」） */
+#middle-child02 {
+  /* 親要素のdiv要素（id名「middle」)を基準にした絶対位置に配置 */
+  position: absolute;
+  /* 上から300px、左から300px距離を取った場所に配置 */
+  top: 300px;
+  left: 300px;
+}
+
+/* 真ん中の図形の位置を指定（id名「middle-child03」） */
+#middle-child03 {
+  /* 親要素のdiv要素（id名「middle」)を基準にした絶対位置に配置 */
+  position: absolute;
+  /* 上から500px、左から500px距離を取った場所に配置 */
+  top: 500px;
+  left: 500px;
+}
+
+/* div要素（id名「bottom」）に対する装飾 */
+#bottom {
+  /* 横幅を800pxにします。 */
+  width: 800px;
+  /* 高さを300pxにします。 */
+  height: 300px;
+  /* 画面の中央に配置します。 */
+  margin: 0 auto;
+  /* 背景色を「#87ceeb」にします。 */
+  background-color: #87ceeb;
+}
+
+/* div要素（id名「bottom-child01」「bottom-child02」「bottom-child03」）に対する共通の装飾 */
+#bottom div {
+  /* 横幅を400pxにします。 */
+  width: 400px;
+  /* 高さを100pxにします。 */
+  height: 100px;
+  /* 背景色を「#e5dcf0」にします。 */
+  background-color: #e5dcf0;  
+}
+
+/* 一番下の図形の位置を指定（id名「bottom-child02」） */
+#bottom-child02 {
+  /* 本来の表示場所を基準にした相対位置に設定 */
+  position: relative;
+  /* 本来の表示場所の左から200pxずらして配置 */
+  left: 200px;
+}
+
+/* 一番下の図形の位置を指定（id名「bottom-child03」） */
+#bottom-child03 {
+  /* 本来の表示場所を基準にした相対位置に設定 */
+  position: relative;
+  /* 本来の表示場所の左から400pxずらして配置 */
+  left: 400px;
+}
